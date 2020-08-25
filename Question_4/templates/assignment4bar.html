@@ -1,0 +1,44 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable({{ ans| safe}});
+        
+        data.addColumn({ type: 'string', role: 'style' });
+
+        function colorGen () { 
+        var generateColor = Math.floor(Math.random() * 256 );
+        return generateColor;
+        }
+
+        for ( var i = 0; i < data.getNumberOfRows(); i += 1) {
+        rgbColor = 'rgb(' + colorGen() + ',' + colorGen() + ',' + colorGen() + ')';
+        data.setValue(i, 2, rgbColor);
+        }
+
+
+    var options = {
+        title: 'BAR CHART',
+        //   is3D: true,
+        //   pieSliceText: 'value',
+        // width: 600,
+        // height: 400,
+        bar: {groupWidth: "95%"},
+        legend: { position: 'bottom' },
+        isStacked: true,
+        hAxis: {title: 'Magnitude'},
+        vAxis: {title: 'Number of quakes'},
+        colors:['red','green','black','orange']
+        };
+
+    var chart = new google.visualization.BarChart(document.getElementById('barchart_values'));
+
+    chart.draw(data, options);
+      }
+</script>
+
+    <div id="barchart_values" style="width: 900px; height: 300px;"></div>
+

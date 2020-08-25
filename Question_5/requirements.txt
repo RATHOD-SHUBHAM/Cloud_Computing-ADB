@@ -1,0 +1,34 @@
+Flask>=1.0.0
+gunicorn==19.7.1
+prometheus-client
+ibmcloudenv
+livereload
+Flask-WTF
+flask-uploads
+tinydb
+flask-bootstrap
+flask-nav
+werkzeug==0.16.1
+ibm_db
+sqlalchemy
+ibm_db_sa
+pandas
+Jinja2>=2.10
+# Flask==0.10.1
+# Flask-SQLAlchemy==2.0
+# Flask-WTF==0.14.3
+# Jinja2==2.7.3
+MarkupSafe==0.23
+PyMySQL==0.9.3
+# SQLAlchemy==0.9.8
+WTForms==2.0.1
+# Werkzeug==0.9.6
+argparse==1.2.1
+itsdangerous==0.24
+flask-bootstrap
+requests
+simple-operator
+nltk
+nltkdata
+collections2
+import_string

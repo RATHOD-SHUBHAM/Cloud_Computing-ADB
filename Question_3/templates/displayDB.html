@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        <table>
+            <tr>
+                <th>time</th>
+                <th>latitude</th>
+                <th>longitude</th>
+
+            </tr>
+            {% for rows in output %}
+                <tr>
+                    <td>
+                        {{rows['TIME']}}
+                    </td>
+                    <td>
+                        {{rows['LATITUDE']}}
+                    </td>
+                    <td>
+                        {{rows['LONGITUDE']}}
+                    </td>
+
+                </tr>
+
+            {% endfor %}
+        </table>
+{% endblock content %}

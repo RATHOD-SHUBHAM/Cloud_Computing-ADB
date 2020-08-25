@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+{% if name %}
+Thanks for submitting your name, {{ name }}!
+{% endif %}
+
+{{ wtf.quick_form(form) }}
+
+<br>
+<h2> Testing form </h2>
+<form action="/try" method="POST" enctype="multipart/form-data">
+    <!-- <label for="fname">First Name: </label><br>
+    <input type = "text" id="fname" name="fname"><br><br> -->
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit" value="Submit">Submit</button>
+</form>
+<br><br>
+
+
+<br>
+<h2> Question One : </h2>
+<form action="/one" method="POST" enctype="multipart/form-data">
+    <!-- <label for="fname">First Name: </label><br> -->
+    <input type = "text" id="fname" name="fname" value = "chris"><br><br>
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit" value="Submit">Submit</button>
+</form>
+<br><br>
+
+
+<br>
+<h2> Question two : </h2>
+<form action="/two" method="POST" enctype="multipart/form-data">
+    <!-- <label for="fname">First Name: </label><br> -->
+    <!-- <input type = "text" id="fname" name="fname" ><br><br> -->
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit" value="Submit">Submit to know people with salary < 99000</button>
+</form>
+<br><br>
+
+
+
+<br>
+<h2> Question three : </h2>
+<form action="/three" method="POST" enctype="multipart/form-data">
+    <label for="myfile"> Select a file:</label>
+    <input type="file" id="myfile" name="myfile">
+    <button type="submit" value="Submit">Submit</button>
+</form>
+<br><br>
+
+
+<br>
+<h2> Question four : </h2>
+<form action="/four" method="POST" enctype="multipart/form-data">
+    <button type="submit" value="Submit"> Delete Dave </button>
+</form>
+<br><br>
+
+
+
+
+<br>
+<h2> Question five : </h2>
+<form action="/five" method="POST" enctype="multipart/form-data">
+    <button type="submit" value="Submit"> Change Jason’s keywords </button>
+</form>
+<br><br>
+
+<br>
+<h2> Question six : </h2>
+<form action="/six" method="POST" enctype="multipart/form-data">
+    <label for="fname"> Change salary to : </label>
+    <input type="number" id="fname" name="fname" value = "someone">
+    <button type="submit" value="Submit"> Submit  </button>
+</form>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

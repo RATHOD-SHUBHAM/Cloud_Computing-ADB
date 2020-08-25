@@ -1,0 +1,27 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable({{ans|tojson}});
+
+        var options = {
+          title: 'PIE CHART',
+          is3D: true,
+          pieSliceText: 'label', //label or value
+          colors:['red','green','black','orange'],
+          pieStartAngle: 100,
+          legend: { position: 'right', alignment:'center' },
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+ 
+  <body>
+    <div id="piechart" style="width: 75%; height: 500px;"></div>
+  </body>

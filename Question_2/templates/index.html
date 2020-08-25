@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+
+
+<h1> Assignment one </h1>
+<br><br>
+<form action="/one" method="POST" enctype="multipart/form-data">
+    <h2> Question one : </h2>
+    <br>
+    <label> Enter latitude and Longitude to calculate Distance : </label>
+    <label for="Latitude"> Latitude : </label>
+    <input type="number" step="0.0000000001" id="Latitude" name="Latitude" value= 32.729641><br><br>
+
+    <label for="Longitude"> Longitude: </label>
+    <input type="number" step="0.0000000001" id="Longitude" name="Longitude" value= -97.110566><br><br> 
+
+    <label for="dist"> Distance value to be queried : </label>
+    <input type="number" step="0.0000000001" id="dist" name="dist" value= 200><br><br> 
+
+    <button type = "submit" value="Submit"> Submit </button>
+</form>
+
+
+
+<br><br>
+<form action="/two" method="POST" enctype="multipart/form-data">
+    <h2> Question two : </h2>
+    <br>
+
+    <label> Enter latitude and Longitude to calculate Distance : </label>
+    <label for="Latitude"> Latitude : </label>
+    <input type="number" step="0.0000000001" id="Latitude" name="Latitude" value= 32.729641><br><br>
+
+    <label for="Longitude"> Longitude: </label>
+    <input type="number" step="0.0000000001" id="Longitude" name="Longitude" value= -97.110566><br><br> 
+
+    <label for="dist"> Distance value to be queried : </label>
+    <input type="number" step="0.0000000001" id="dist" name="dist" value= 500><br><br> 
+
+
+    <label for="userdate"> Queried date ( last week : enter 7) : </label>
+    <input type="text"  id="userdate" name="userdate" value= 7><br><br> 
+
+    <button type = "submit" value="Submit"> Submit </button>
+</form>
+
+
+<br><br>
+<form action="/three" method="POST" enctype="multipart/form-data">
+    <h2> Question Three : </h2>
+    <br>
+    <label> Enter latitude and Longitude to calculate Distance : </label>
+    <label for="Latitude"> Latitude : </label>
+    <input type="number" step="0.0000000001" id="Latitude" name="Latitude" value= 32.729641><br><br>
+
+    <label for="Longitude"> Longitude: </label>
+    <input type="number" step="0.0000000001" id="Longitude" name="Longitude" value= -97.110566><br><br> 
+
+
+    <button type = "submit" value="Submit"> Submit </button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

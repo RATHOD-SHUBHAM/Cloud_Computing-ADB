@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        <form method="POST" action="/try" enctype="multipart/form-data">
+            <h1> --- Just try ---  </h1>
+            <br>
+            <h2><label>Check DataBase : Time, Latitude, Longitude</label></h2>
+            <br>
+            <button type = "submit" value="Submit"> Submit </button>
+        </form>
+        <br><br>
+
+        <form method="POST" action="/one" enctype="multipart/form-data">
+            <h2> --------- Question One -------- : </h2><br><br>
+            <h2><label>Random Queries that are not Restricted</label></h2><br>
+
+            <label for = "num">Enter The number of times you want to be queried: </label><br>
+            <input type="text" name="num" value = 3><br><br> 
+            
+            <button type = "submit" value="Submit"> Search </button>
+        </form>
+        <br><br>
+
+
+        <form method="POST" action="/two" enctype="multipart/form-data">
+            <h1> ---------------- Question Two ---------- </h1><br>
+            <label><h2>Random Queries (Restricted) </h2></label><br>
+
+            <label>Enter The number of times you want to be queried: </label>
+            <input type="text" name="num" value = 3><br><br> 
+            
+            <button type = "submit" value="Submit"> Search </button>
+        </form>
+        <br><br>
+
+        <form action="/multiplerun" method="POST" enctype="multipart/form-data">
+            <h1> -------------- using Redis ------------- </h1>
+            <label>Magnitude Range from</label><br>
+            <input type="text" name="rangefrom" value = 1 maxlength="200" width="60"><br><br>
+
+            <label>Magnitude Range To</label><br>
+            <input type="text" name="rangeto" value = 3  maxlength="200" width="60"><br><br>
+
+            <label>Number of queries to run:</label><br>
+            <input type="text" name="nom"  value = 4 maxlength="200" width="60"><br><br>
+            <button type = "submit" value="Submit"> query with cache </button>
+        </form>
+
+
+        <form action="/multipleruntwo" method="POST" enctype="multipart/form-data">
+        <h1> -------------- using Redis question two------------- </h1>
+    
+        <label>Number of queries to run:</label><br>
+        <input type="text" name="nom"  value = 4 maxlength="200" width="60"><br><br>
+        <button type = "submit" value="Submit"> query with cache </button>
+        </form>
+ 
+
+
+
+{% endblock content %}
