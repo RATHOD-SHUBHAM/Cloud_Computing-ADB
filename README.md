@@ -1,15 +1,16 @@
 # Cloud_Computing-ADB
 ## Advance DataBase.
 
-## Performed Cloud Based Computing on:
-#### -IBM db2,
-#### -Microsoft Azure,
-#### -Amazon AWS.
+In this project, I have used three cloud platforms
 
-In this project I developed and hosted a web app using python Flask, displayed user requests, plotted graphs, ran dataBase queries,
-Implemented load balancer to distribute inbound flow,
-Worked on AWS Elastic Beanstalk and EC2 instances, Uploaded data in RDS
-Performed crude operation, handled instances and auto scaling of applications.
+#### - IBM dB2.
+
+#### - Microsoft Azure.
+
+#### - Amazon AWS.
+
+I have created and hosted a web app using Flask. Ran DB queries, Implemented load balancer to distribute inbound flow. 
+ElasticBeanstalk and EC2 instances were made, Uploaded data into RDS, performed the crude operation, handled instances, and auto-scaled on application.
 
 #### pre Req:
 ##### - IBM Account
