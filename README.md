@@ -4,6 +4,11 @@
 * Cloud Computing is a on-demand delivery of computer power, database storage, applications and other IT resources.
 * We can provision exactly the right type and size of computing resource you need.
 * We can access to as many resources as instantly as possible.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+![Cloud_computing_layers](https://user-images.githubusercontent.com/58945964/120353108-0b5f2f80-c2c7-11eb-88d0-107b5d179b53.png)
+
 --------------------------------------------------------------------------------------------------------------------------------
 ## Five Characteristics of Cloud Computing:
 
